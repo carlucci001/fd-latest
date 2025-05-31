@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site" method="upgrade">
+    <name>tpl_farrington</name>
+    <version>1.0.0</version>
+    <creationDate>March 2024</creationDate>
+    <author>Farrington Development</author>
+    <authorEmail>info@farringtondevelopment.com</authorEmail>
+    <authorUrl>https://farringtondevelopment.com</authorUrl>
+    <copyright>Copyright (C) 2024 Farrington Development. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <description>TPL_FARRINGTON_XML_DESCRIPTION</description>
+
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>index.php</filename>
+        <filename>offline.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>layouts</folder>
+    </files>
+
+    <positions>
+        <!-- Header Positions -->
+        <position>top-bar</position>
+        <position>header-left</position>
+        <position>header-right</position>
+        <position>logo</position>
+        <position>menu</position>
+        <position>search</position>
+        
+        <!-- Hero Section -->
+        <position>hero-main</position>
+        <position>hero-content</position>
+        <position>hero-buttons</position>
+        
+        <!-- Main Content Areas -->
+        <position>breadcrumbs</position>
+        <position>main-top</position>
+        <position>main-content</position>
+        <position>main-bottom</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        
+        <!-- Featured Sections -->
+        <position>featured-1</position>
+        <position>featured-2</position>
+        <position>featured-3</position>
+        <position>featured-4</position>
+        
+        <!-- Service Sections -->
+        <position>services-intro</position>
+        <position>services-grid</position>
+        <position>services-bottom</position>
+        
+        <!-- About Sections -->
+        <position>about-top</position>
+        <position>about-content</position>
+        <position>about-stats</position>
+        <position>team-members</position>
+        
+        <!-- Projects Section -->
+        <position>projects-intro</position>
+        <position>projects-grid</position>
+        <position>projects-bottom</position>
+        
+        <!-- CTA Sections -->
+        <position>cta-top</position>
+        <position>cta-main</position>
+        <position>cta-bottom</position>
+        
+        <!-- Footer Areas -->
+        <position>footer-logo</position>
+        <position>footer-about</position>
+        <position>footer-menu</position>
+        <position>footer-services</position>
+        <position>footer-contact</position>
+        <position>footer-social</position>
+        <position>footer-bottom</position>
+        
+        <!-- Special Positions -->
+        <position>popup-forms</position>
+        <position>floating-buttons</position>
+        <position>debug</position>
+    </positions>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="logoFile"
+                    type="media"
+                    label="TPL_FARRINGTON_LOGO_LABEL"
+                    description="TPL_FARRINGTON_LOGO_DESC"
+                />
+                <field
+                    name="siteTitle"
+                    type="text"
+                    label="TPL_FARRINGTON_SITE_TITLE_LABEL"
+                    description="TPL_FARRINGTON_SITE_TITLE_DESC"
+                />
+                <field
+                    name="darkMode"
+                    type="radio"
+                    label="TPL_FARRINGTON_DARK_MODE_LABEL"
+                    description="TPL_FARRINGTON_DARK_MODE_DESC"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

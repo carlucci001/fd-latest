@@ -1,0 +1,46 @@
+{
+  "name": "farrington-development",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "create-package": "node build-zip.js",
+    "verify": "node verify-zip.js",
+    "build:cpanel": "cross-env VITE_BASE_URL=/ npm run build && node build-cpanel.js",
+    "build:lamp": "cross-env VITE_BASE_URL=/ npm run build && node build-lamp.js"
+  },
+  "dependencies": {
+    "framer-motion": "^11.0.8",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.56.0",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-helmet": "^6.1.11",
+    "@vitejs/plugin-react": "^4.2.1",
+    "archiver": "^6.0.1",
+    "autoprefixer": "^10.4.18",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "terser": "^5.29.2",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.0.2",
+    "unzipper": "^0.10.14",
+    "vite": "^5.1.4"
+  }
+}
